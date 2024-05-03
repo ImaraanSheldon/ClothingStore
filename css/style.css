@@ -1,0 +1,55 @@
+/* universal */
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+:root{
+    /* colors are bad tbh idk what to choose if you want you can change them */
+    --color-nav-background:#769597;
+    --color-main-background:#00565f;
+    --color-content-background:#914236;
+    --color-content-hover:#d77d49;
+    --color-accent:#664d51;
+    --navbar-padding:70px;
+}
+body{
+    background-color: var(--color-main-background);
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* /universal/ */
+
+/* navbar */
+.navbar{
+    background-color: var(--color-nav-background);
+}
+.offcanvas-header{
+    background-color: var(--color-main-background);
+}
+.offcanvas-body{
+    background-color: var(--color-nav-background);
+}
+/* /navbar/ */
+
+/* Main Content */
+main{
+    display: flex;
+    flex-flow: column;
+}
+.full-body{
+    /* delete width later on */
+    width: 100vw;  
+    min-height:80vh ;
+    height: 100%;
+    border-bottom: 2px solid white;
+}
+.hero{
+    padding-top: var(--navbar-padding);
+}
+/* /Main Content/ */
