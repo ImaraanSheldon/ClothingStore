@@ -8,17 +8,18 @@
 }
 
 :root{
-    /* colors are bad tbh idk what to choose if you want you can change them */
-    --color-nav-background:#769597;
-    --color-main-background:#00565f;
-    --color-content-background:#914236;
+    --color-nav-background:#94A684;
+    --color-main-background:#FFEEF4;
+    --color-content-background:#AEC3AE;
     --color-content-hover:#d77d49;
     --color-accent:#664d51;
     --navbar-padding:70px;
 }
+
 body{
     background-color: var(--color-main-background);
 }
+
 a{
     text-decoration: none;
     color: #ffffff;
@@ -29,9 +30,11 @@ a{
 .navbar{
     background-color: var(--color-nav-background);
 }
+
 .offcanvas-header{
     background-color: var(--color-main-background);
 }
+
 .offcanvas-body{
     background-color: var(--color-nav-background);
 }
@@ -42,6 +45,7 @@ main{
     display: flex;
     flex-flow: column;
 }
+
 .full-body{
     /* delete width later on */
     width: 100vw;  
@@ -49,6 +53,7 @@ main{
     height: 100%;
     border-bottom: 2px solid white;
 }
+
 .hero{
     padding-top: var(--navbar-padding);
 }
