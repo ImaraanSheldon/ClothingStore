@@ -1,131 +1,156 @@
+
 /* universal */
 *,
 ::before,
-::after{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+::after {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }
 
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
-:root{
-    --color-nav-background:#94A684;
-    --color-main-background:#FFEEF4;
-    --color-content-background:#AEC3AE;
-    --color-alternate-bg: #E4E4D0;
-    --color-content-hover:#d77d49;
-    --color-accent:#664d51;
-    --navbar-padding:70px;
+:root {
+  --color-nav-background: #94a684;
+  --color-main-background: #ffeef4;
+  --color-content-background: #aec3ae;
+  --color-alternate-bg: #e4e4d0;
+  --color-content-hover: #d77d49;
+  --color-accent: #664d51;
+  --navbar-padding: 70px;
+  --title-padding: 5rem;
 }
 
-body{
+body {
+  background-color: var(--color-main-background);
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.green-btn {
+  background-color: var(--color-nav-background);
+  font-weight: bold;
+  color: var(--color-main-background);
+
+  &:hover {
+    border: 1px solid var(--color-nav-background);
     background-color: var(--color-main-background);
+    color: var(--color-nav-background);
+  }
 }
 
-a{
-    text-decoration: none;
+.card {
+  margin: auto;
+  background-color: var(--color-main-background);
+
+  &:hover{
+    transition: all .35s ease-in-out;
+    transform: scale(1.1);
+  }
 }
 
-.text-center{
-    text-align: center;
+.card-body {
+  display: flex;
+  flex-direction: column;
 }
 
-.green-btn{
-    background-color: var(--color-nav-background);
-    font-weight: bold;
-    color: var(--color-main-background);
-
-    &:hover{
-        border: 1px solid var(--color-nav-background);
-        background-color: var(--color-main-background);
-        color: var(--color-nav-background);
-    }
+span {
+  font-weight: bold;
 }
 /* /universal/ */
 
 /* navbar */
-.navbar{
-    background-color: var(--color-nav-background);
+.navbar {
+  background-color: var(--color-nav-background);
 }
 
-.offcanvas-header{
-    background-color: var(--color-main-background);
+.offcanvas-header {
+  background-color: var(--color-main-background);
 }
 
-.offcanvas-body{
-    background-color: var(--color-nav-background);
+.offcanvas-body {
+  background-color: var(--color-nav-background);
 }
 /* /navbar/ */
 
 /* Main Content */
-main{
-    display: flex;
-    flex-flow: column;
+main {
+  display: flex;
+  flex-flow: column;
 }
 
-.full-body{
-    /* delete width later on */
-    width: 100vw;  
-    min-height:80vh ;
-    height: 100%;
-    border-bottom: 2px solid white;
+.full-body {
+  /* delete width later on */
+  width: 100vw;
+  min-height: 80vh;
+  height: 100%;
+  border-bottom: 2px solid white;
 }
 
 /* hero */
-.hero{
-    padding-top: var(--navbar-padding);
-    background-color: var(--color-nav-background);
+.hero {
+  padding-top: var(--navbar-padding);
+  background-color: var(--color-nav-background);
 }
 
-.hero-text-box > h1{
-    width: 80%;
+.hero-text-box > h1 {
+  width: 80%;
 }
 
-.hero-text-box > p{
-    margin: 2rem auto ;
+.hero-text-box > p {
+  margin: 2rem auto;
 }
 
-.hero-text-box{
-    padding: 2rem;
+.hero-text-box {
+  padding: 2rem;
 }
 
-.hero-img-box{
-    width: 70%;
-    padding: 2rem;
+.hero-img-box {
+  width: 70%;
+  padding: 2rem;
 }
 
-img[alt="hero-img"]{
-    width: 100%;
+img[alt="hero-img"] {
+  width: 100%;
 }
 
-.hero-btn{
-    background-color: var(--color-main-background);
-    color: var(--color-nav-background);
-    font-weight: bold;
+.hero-btn {
+  background-color: var(--color-main-background);
+  color: var(--color-nav-background);
+  font-weight: bold;
 
-    &:hover{
-        border: 1px solid var(--color-main-background);
-        color: var(--color-main-background);
-    }
+  &:hover {
+    border: 1px solid var(--color-main-background);
+    color: var(--color-main-background);
+  }
 }
 /* hero */
 
 /* suggestions section */
-.suggestion-container .card{
-    margin: auto;
-    background-color: var(--color-main-background);
+.suggested-collections {
+  padding: var(--title-padding);
 }
 
-.suggested-collections{
-    margin: 5rem auto;
+.suggested-collections h2 {
+  padding-bottom: var(--title-padding);
 }
 
-.suggested-collections h2{
-    margin-bottom: 3rem;
+/* popular items section */
+.popular-items-section {
+  background-color: var(--color-content-background);
+  padding-bottom: var(--title-padding);
 }
 
+.popular-items-section h2 {
+  padding: var(--title-padding);
+}
 
 /* /Main Content/ */
