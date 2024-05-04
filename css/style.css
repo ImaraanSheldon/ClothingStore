@@ -28,6 +28,22 @@ body{
 a{
     text-decoration: none;
 }
+
+.text-center{
+    text-align: center;
+}
+
+.green-btn{
+    background-color: var(--color-nav-background);
+    font-weight: bold;
+    color: var(--color-main-background);
+
+    &:hover{
+        border: 1px solid var(--color-nav-background);
+        background-color: var(--color-main-background);
+        color: var(--color-nav-background);
+    }
+}
 /* /universal/ */
 
 /* navbar */
@@ -97,6 +113,19 @@ img[alt="hero-img"]{
 }
 /* hero */
 
+/* suggestions section */
+.suggestion-container .card{
+    margin: auto;
+    background-color: var(--color-main-background);
+}
+
+.suggested-collections{
+    margin: 5rem auto;
+}
+
+.suggested-collections h2{
+    margin-bottom: 3rem;
+}
 
 
 /* /Main Content/ */
