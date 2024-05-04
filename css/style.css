@@ -7,10 +7,15 @@
     display: inline-block;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 :root{
     --color-nav-background:#94A684;
     --color-main-background:#FFEEF4;
     --color-content-background:#AEC3AE;
+    --color-alternate-bg: #E4E4D0;
     --color-content-hover:#d77d49;
     --color-accent:#664d51;
     --navbar-padding:70px;
@@ -22,7 +27,6 @@ body{
 
 a{
     text-decoration: none;
-    color: #ffffff;
 }
 /* /universal/ */
 
@@ -54,7 +58,45 @@ main{
     border-bottom: 2px solid white;
 }
 
+/* hero */
 .hero{
     padding-top: var(--navbar-padding);
+    background-color: var(--color-nav-background);
 }
+
+.hero-text-box > h1{
+    width: 80%;
+}
+
+.hero-text-box > p{
+    margin: 2rem auto ;
+}
+
+.hero-text-box{
+    padding: 2rem;
+}
+
+.hero-img-box{
+    width: 70%;
+    padding: 2rem;
+}
+
+img[alt="hero-img"]{
+    width: 100%;
+}
+
+.hero-btn{
+    background-color: var(--color-main-background);
+    color: var(--color-nav-background);
+    font-weight: bold;
+
+    &:hover{
+        border: 1px solid var(--color-main-background);
+        color: var(--color-main-background);
+    }
+}
+/* hero */
+
+
+
 /* /Main Content/ */
