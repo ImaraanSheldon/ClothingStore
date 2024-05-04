@@ -92,7 +92,6 @@ main {
   width: 100vw;
   min-height: 80vh;
   height: 100%;
-  border-bottom: 2px solid white;
 }
 
 /* hero */
@@ -154,3 +153,16 @@ img[alt="hero-img"] {
 }
 
 /* /Main Content/ */
+
+/* Footer */
+.footer{
+  width: 100vw;
+  height:auto;
+  background-color: var(--color-nav-background);
+}
+.footer-link-parent a{
+  text-decoration: none;
+  padding: 0 1rem;
+  color: black;
+}
+/* /footer/ */
