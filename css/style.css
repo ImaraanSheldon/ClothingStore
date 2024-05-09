@@ -25,6 +25,8 @@
 
 body {
   background-color: var(--color-main-background);
+  min-width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
@@ -68,8 +70,13 @@ span {
 /* /universal/ */
 
 /* navbar */
+img[alt="Logo"]{
+  aspect-ratio: 1/1;
+  width: 5rem;
+}
 .navbar {
   background-color: var(--color-nav-background);
+  min-height:20vh ;
 }
 
 .offcanvas-header {
@@ -88,8 +95,6 @@ main {
 }
 
 .full-body {
-  /* delete width later on */
-  width: 100vw;
   min-height: 80vh;
   height: 100%;
 }
@@ -112,13 +117,10 @@ main {
   padding: 2rem;
 }
 
-.hero-img-box {
-  width: 70%;
-  padding: 2rem;
-}
-
 img[alt="hero-img"] {
-  width: 100%;
+  aspect-ratio: 9/16;
+  width:25vw;
+  max-height: 70vh;
 }
 
 .hero-btn {
@@ -150,6 +152,14 @@ img[alt="hero-img"] {
 
 .popular-items-section h2 {
   padding: var(--title-padding);
+}
+
+img[alt="c"]{
+  aspect-ratio: 3/2;
+  width: 70vw;
+}
+.padding{
+  padding-top: 20vh ;
 }
 
 /* /Main Content/ */
