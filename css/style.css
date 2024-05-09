@@ -160,6 +160,9 @@ img[alt="hero-img"] {
   height:auto;
   background-color: var(--color-nav-background);
 }
+.footer-link-parent{
+  border-bottom: 1px solid black;
+}
 .footer-link-parent a{
   text-decoration: none;
   padding: 0 1rem;
